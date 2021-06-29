@@ -7,7 +7,7 @@ variable "linux_ami" {
 }
 
 variable "instance_type" {
-    description = "instance type to use. Default: t3.micro"
+    description = "(Optional) instance type to use. Default: t3.micro"
     default = "t3.micro"
 }
 
@@ -19,4 +19,8 @@ variable "security_group_id" {
     description = "Id of the security group applied to the instance"
 }
 
+variable "subnet_id" {
+    description = "(Optional) VPC Subnet ID to launch in"
+    default = ""
+}
 
