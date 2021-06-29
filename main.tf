@@ -26,7 +26,7 @@ resource "aws_instance" "memtier" {
   user_data                   = data.template_file.user_data.rendered
 
   tags = {
-    Name = "RIOT"
+    Name = "memtier"
   }
 }
 
