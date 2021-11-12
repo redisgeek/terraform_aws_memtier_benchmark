@@ -9,20 +9,20 @@ variable "linux_ami" {
 }
 
 variable "instance_type" {
-    description = "(Optional) instance type to use. Default: t3.micro"
-    default = "t3.micro"
+  description = "(Optional) instance type to use. Default: t3.micro"
+  default     = "t3.micro"
 }
 
 variable "ssh_key_name" {
-    description = "name of ssh key to be added to instance"
+  description = "name of ssh key to be added to instance"
 }
 
 variable "security_group_id" {
-    description = "Id of the security group applied to the instance"
+  description = "Id of the security group applied to the instance"
 }
 
 variable "subnet_id" {
-    description = "(Optional) VPC Subnet ID to launch in"
-    default = ""
+  description = "(Optional) VPC Subnet ID to launch in"
+  default     = ""
 }
 
